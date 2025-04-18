@@ -1,236 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>علم الأردن - يوم العلم</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      direction: rtl;
-      text-align: center;
-      background: url('./الصور/صورة\ ليوم\ العلم.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      min-height: 100vh;
-      padding: 50px 20px;
-    }
-
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .header img {
-      width: 80px;
-      height: auto;
-      margin-left: 10px;
-    }
-
-    .header-text {
-      font-size: 28px;
-      color: #ffd700;
-      font-weight: bold;
-      margin-left: 15px;
-    }
-
-    .flag {
-      position: relative;
-      width: 320px;
-      height: 160px;
-      margin: auto;
-      overflow: hidden;
-      animation: wave 2s ease-in-out infinite;
-    }
-
-    .stripe {
-      width: 100%;
-      height: 33.33%;
-      position: absolute;
-      left: -100%;
-      animation: slideIn 1s forwards;
-    }
-
-    .black {
-      top: 0;
-      background: black;
-      animation-delay: 0.5s;
-    }
-
-    .white {
-      top: 33.33%;
-      background: white;
-      animation-delay: 1s;
-    }
-
-    .green {
-      top: 66.66%;
-      background: green;
-      animation-delay: 1.5s;
-    }
-
-    .triangle {
-      position: absolute;
-      top: 0;
-      left: -160px;
-      width: 0;
-      height: 0;
-      border-top: 80px solid transparent;
-      border-bottom: 80px solid transparent;
-      border-left: 160px solid red;
-      animation: slideInTriangle 1s forwards;
-      animation-delay: 2s;
-    }
-
-    .star {
-      position: absolute;
-      top: 50%;
-      left: -40px;
-      transform: translateY(-50%);
-      font-size: 24px;
-      color: white;
-      animation: slideInStar 1s forwards;
-      animation-delay: 2.5s;
-    }
-
-    @keyframes slideIn {
-      to { left: 0; }
-    }
-
-    @keyframes slideInTriangle {
-      to { left: 0; }
-    }
-
-    @keyframes slideInStar {
-      to { left: 45px; }
-    }
-
-    @keyframes wave {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(1.8deg); }
-    }
-
-    h2, h3 {
-      color: #ffd700;
-      margin-top: 40px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-      max-width: 800px;
-      margin: 15px auto;
-    }
-
-    .color-box {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin: 5px;
-      border-radius: 50%;
-    }
-
-    .black-box { background-color: black; }
-    .white-box { background-color: white; border: 1px solid #ccc; }
-    .green-box { background-color: green; }
-    .red-box { background-color: red; }
-
-    .video-container {
-      margin-top: 30px;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-    }
-
-    .images {
-      margin-top: 30px;
-    }
-
-    .images img {
-      width: 200px;
-      height: auto;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
-    }
-
-    .footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 18px;
-      background: rgba(255, 255, 255, 0.1);
-      border-top: 2px solid #fff;
-      color: #ffd700;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <img src="./الصور/الأردن2.jpg " alt="شعار المملكة الأردنية الهاشمية">
-    <span class="header-text">Jordan Hashemite Kingdom</span>
-  </div>
-
-  <div class="overlay">
-    <div class="flag">
-      <div class="stripe black"></div>
-      <div class="stripe white"></div>
-      <div class="stripe green"></div>
-      <div class="triangle"></div>
-      <div class="star">★</div>
-    </div>
-
-    <h2>Jordanian National Flag Day</h2>
-    <p>يوم العلم الأردني هو مناسبة وطنية نعتز بها جميعًا، حيث نُعبّر من خلالها عن انتمائنا وفخرنا بهذا الوطن العظيم.</p>
-    <p>يُعد العلم الأردني رمزاً للوحدة والكرامة والسيادة، ويجسد مسيرة النضال والكفاح التي خاضها الأردنيون في سبيل الحرية والاستقلال.</p>
-    <p>في هذا اليوم، تتزين المدارس والمؤسسات والشوارع بعلم الأردن، وتُقام الاحتفالات التي تعبّر عن الحب والولاء لهذا التراب الطيب.</p>
-
-    <h3>دلالات ألوان العلم الأردني:</h3>
-    <p><span class="color-box black-box"></span> <strong>اللون الأسود:</strong> يمثل راية العباسيين، وهو رمز للقوة والهيبة والعدل. وقد ارتبط تاريخيًا بالخلافة العباسية التي حكمت بظل الإسلام.</p>
-    <p><span class="color-box white-box"></span> <strong>اللون الأبيض:</strong> يمثل راية الأمويين، وهو رمز للنقاء والسلام والانتصار، وقد شهدت تلك الفترة ازدهار الحضارة العربية الإسلامية.</p>
-    <p><span class="color-box green-box"></span> <strong>اللون الأخضر:</strong> يرمز للفاطميين، ويرتبط بالدين الإسلامي، حيث يمثل الخير والنماء، وهو لون راية النبي محمد ﷺ.</p>
-    <p><span class="color-box red-box"></span> <strong>اللون الأحمر:</strong> يرمز إلى الثورة العربية الكبرى وإلى الهاشميين، ويعبر عن الشجاعة والتضحية والحرية.</p>
-
-    <div class="video-container">
-      <h3>فيديو يشرح دلالات ألوان العلم الأردني</h3>
-      <iframe src="https://www.youtube.com/embed/xes_hGFprCg" frameborder="0" allowfullscreen></iframe>
-    </div>
-    
-    <h3>معلومات تاريخية عن العلم الأردني:</h3>
-    <p>تم اعتماد العلم الأردني رسميًا عام 1928، وهو مستوحى من علم الثورة العربية الكبرى، ويجمع بين رموز تاريخية ودينية تمثل الأمة العربية والإسلامية.</p>
-    <p>يتكون العلم من ثلاث أشرطة أفقية (أسود، أبيض، أخضر) ومثلث أحمر يحتوي على نجمة بيضاء سباعية، ترمز إلى الوحدة ومبادئ النهضة.</p>
-
-    <div class="images">
-      <img src="./الصور/7794454b-59ef-4448-8fcf-abd5941a03f4.jfif" alt="علم الأردن">
-      <img src="./الصور/Jordan🇯🇴.jfif" alt="عمان">
-      <img src="./الصور/الأردن (1).jfif" alt="الأردن">
-    </div>
-    <div class="footer">
-        <span style="color:black;">●</span>
-        <span style="color:white;">●</span>
-        <span style="color:green;">●</span>
-        <span style="color:red;">●</span>
-        &nbsp;
-        <span style="color:#ffd700; font-weight:bold;">
-            |جميع الحقوق محفوظة:  <span style="color:#ffffff;"> لمدرسة القويسمة وابو علندا المهنية للبنات </span>
-           | المديرة: <span style="color:#ffffff;"> فاطمة الحنيطي</span>
-           | تحت اشراف المعلمة: <span style="color:#ffffff;"> فاتن حشكي</span> 
-        </span>
-        &nbsp;
-        <span style="color:red;">▲</span><span style="color:green;">▲</span><span style="color:white;">▲</span><span style="color:black;">▲</span>
-      </div>
-      
-</body>
-</html>
